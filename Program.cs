@@ -189,20 +189,20 @@ Console.OutputEncoding = System.Text.Encoding.UTF8;
 //{
 //    Console.WriteLine(ex.Message);
 //}
-
+//try to avoid the commented code
+int a, b, res;
 try
 {
-    int a, b, res;
     Console.WriteLine("Write first number");
-    a= Convert.ToInt32(Console.ReadLine());
+    a = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine("Write second number");
     b = Convert.ToInt32(Console.ReadLine());
     res = a / b;
-    Console.WriteLine("result "+res);
+    Console.WriteLine("result "+ res);
 }
 catch (DivideByZeroException)
 {
-
+//try to avoid the unnecessary whitespaces
     Console.WriteLine("Divided By Zero!!");
 
 
